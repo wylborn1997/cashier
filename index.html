@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>支付页面</title>
+  </head>
+  <body>
+    <button id="payButton">支付</button>
+    <script
+      type="text/javascript"
+      src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"
+    ></script>
+    <script>
+      document
+        .getElementById("payButton")
+        .addEventListener("click", function () {
+          // 向小程序发送消息
+          if (window.parent) {
+            console.log("Button clicked, sending message");
+            // wx.miniProgram.navigateBack({ delta: 1 });
+            wx.miniProgram.postMessage(
+              {
+                data: {
+                  navigateToMiniProgram: true,
+                  appId: "wx01d7113123125809",
+                  path: "pages/payment/payment",
+                },
+              },
+              "*"
+            );
+            console.log("Message sent");
+          } else {
+            console.error("window.parent is not defined");
+          }
+        });
+    </script>
+  </body>
+</html>
