@@ -9,9 +9,18 @@
     <title></title>
     <!--preload-links-->
     <!--app-context-->
+    <style>
+      #id {
+        width: 200px;
+        height: 150px;
+        background: blue;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"><!--app-html--></div>
+    <div id="app">
+      <div id="button">我是按钮</div>
+    </div>
     <!-- <script type="module" src="/main.js"></script> -->
     <script type="text/javascript">
       var userAgent = navigator.userAgent;
@@ -70,6 +79,17 @@
       console.log(uniWebView);
       uniWebView.getEnv(function (res) {
         console.log("当前环境：" + JSON.stringify(res));
+      });
+      let mybutton = document.getElementById("button");
+      mybutton.addEventListener("click", () => {
+        uniWebView.navigateBack({
+          delta: 1,
+        });
+        uni.postMessage({
+          data: {
+            action: "navigateToAnotherMiniProgram",
+          },
+        });
       });
     </script>
   </body>
