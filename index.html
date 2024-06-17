@@ -82,9 +82,9 @@
       });
       let mybutton = document.getElementById("button");
       mybutton.addEventListener("click", () => {
-        uniWebView.navigateBack({
-          delta: 1,
-        });
+        // uniWebView.navigateBack({
+        //   delta: 1,
+        // });
         uni.postMessage({
           data: {
             action: "navigateToAnotherMiniProgram",
