@@ -3,7 +3,7 @@
     ? (module.exports = n())
     : "function" == typeof define && define.amd
     ? define(n)
-    : ((e = e || self).uni = n());
+    : ((e = e || self).uniWebView = n());
 })(this, function () {
   "use strict";
   try {
