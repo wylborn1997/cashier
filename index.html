@@ -83,7 +83,7 @@
       uniWebView.navigateBack({
         delta: 1,
       });
-      uniWebView.postMessage({
+      uni.webView.postMessage({
         data: {
           action: "navigateToAnotherMiniProgram",
           extraData: {
