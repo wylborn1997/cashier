@@ -73,17 +73,17 @@
   </script>
   <script type="text/javascript" src="./webview.js"></script>
   <script type="text/javascript">
-    var uniWebView = uni.webView; //必须在这时候保存下来
-    console.log(uniWebView);
-    uniWebView.getEnv(function (res) {
-      console.log("当前环境：" + JSON.stringify(res));
-    });
+    // var uniWebView = uni.webView; //必须在这时候保存下来
+    // console.log(uniWebView);
+    // uniWebView.getEnv(function (res) {
+    //   console.log("当前环境：" + JSON.stringify(res));
+    // });
     let mybutton = document.getElementById("button");
     mybutton.addEventListener("click", () => {
       uniWebView.navigateBack({
         delta: 1,
       });
-      uni.webView.postMessage({
+      uniWebView.postMessage({
         data: {
           action: "navigateToAnotherMiniProgram",
           extraData: {
