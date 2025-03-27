@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keepa数据深度解析报告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .underline-decor {
+        position: relative;
+        display: inline-block;
+      }
+      .underline-decor::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 2px;
+      }
+      .card-title-underline::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 3px;
+        background: rgba(102, 126, 234, 0.5);
+        border-radius: 2px;
+      }
+      .geometric-pattern {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image:
+          radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 20%),
+          linear-gradient(
+            45deg,
+            transparent 48%,
+            rgba(255, 255, 255, 0.05) 48%,
+            rgba(255, 255, 255, 0.05) 52%,
+            transparent 52%
+          ),
+          linear-gradient(
+            135deg,
+            transparent 48%,
+            rgba(255, 255, 255, 0.05) 48%,
+            rgba(255, 255, 255, 0.05) 52%,
+            transparent 52%
+          );
+        background-size:
+          100px 100px,
+          20px 20px,
+          20px 20px;
+        opacity: 0.3;
+        z-index: 0;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center p-8">
+    <div class="w-[1080px] rounded-xl shadow-lg border border-white/20 relative overflow-hidden gradient-bg">
+      <div class="geometric-pattern"></div>
+      <div class="relative z-10 p-8">
+        <div class="flex justify-between items-start mb-8">
+          <div>
+            <h1 class="text-3xl font-medium text-white mb-2 drop-shadow">Keepa数据深度解析报告 - ASIN: B0BMTPC44X</h1>
+            <p class="text-2xl text-white">亚马逊运营数据深度分析与策略建议</p>
+          </div>
+          <div class="text-right text-white text-base">
+            <p>2025年3月27日</p>
+            <p>数据分析团队</p>
+            <p>来源: Keepa数据</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-clock mr-2 text-blue-500"></i>
+              关键时间点分析
+            </h3>
+            <ul class="text-xs space-y-2 list-disc pl-5 text-gray-800">
+              <li>
+                <span class="font-semibold">最早在售日期</span>
+                : 2023年1月15日 ($10.99)
+              </li>
+              <li>
+                <span class="font-semibold">首单出单时间</span>
+                : 2023年1月17日 (BSR 112)
+              </li>
+              <li>
+                <span class="font-semibold">首条评论时间</span>
+                : 2023年1月22日 (589条评论)
+              </li>
+              <li>
+                <span class="text-blue-600 underline">异常点</span>
+                : 5天内获得589条评论，存在合并变体或违规操作嫌疑
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-chart-line mr-2 text-purple-500"></i>
+              评分数增速曲线
+            </h3>
+            <ul class="text-xs space-y-2 list-disc pl-5 text-gray-800">
+              <li>
+                <span class="font-semibold">初期异常</span>
+                : 直接跳升至589条评论
+              </li>
+              <li>
+                <span class="font-semibold">断层期增长</span>
+                : 9.5个月增加3494条 (日均12条)
+              </li>
+              <li>
+                <span class="font-semibold">近期增长</span>
+                : 12个月增加8318条 (日均23条)
+              </li>
+              <li>评分稳定在4.6-4.7之间，评论获取能力强大</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-tag mr-2 text-green-500"></i>
+              价格策略分析
+            </h3>
+            <ol class="text-xs space-y-2 list-decimal pl-5 text-gray-800">
+              <li>
+                <span class="font-semibold">基准价格</span>
+                : $9.99长期维持
+              </li>
+              <li>
+                <span class="font-semibold">促销价格</span>
+                : 频繁使用$7.99 (约20%折扣)
+              </li>
+              <li>
+                <span class="font-semibold">Prime专享折扣</span>
+                : 2024年7月起多次使用
+              </li>
+              <li>
+                <span class="text-green-600">策略效果</span>
+                : 降价与BSR提升正相关
+              </li>
+            </ol>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-box-open mr-2 text-red-500"></i>
+              断货分析
+            </h3>
+            <div class="text-xs space-y-2 text-gray-800">
+              <p class="flex items-start">
+                <i class="fas fa-check-circle mt-1 mr-2 text-green-500"></i>
+                <span class="font-semibold">库存管理极强</span>
+                : 两年多无FBA断货记录
+              </p>
+              <p class="flex items-start">
+                <i class="fas fa-check-circle mt-1 mr-2 text-green-500"></i>
+                供应链稳定，备货计划精准
+              </p>
+              <p class="flex items-start">
+                <i class="fas fa-check-circle mt-1 mr-2 text-green-500"></i>
+                无断货修复需求，无跟卖风险
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-shield-alt mr-2 text-yellow-500"></i>
+              跟卖攻防分析
+            </h3>
+            <ul class="text-xs space-y-2 list-disc pl-5 text-gray-800">
+              <li>
+                <span class="font-semibold">跟卖情况极少</span>
+                : 仅2次短暂出现(2025年1-2月)
+              </li>
+              <li>
+                <span class="font-semibold">跟卖者类型</span>
+                : 可能为FBA卖家
+              </li>
+              <li>主卖家未降价应对，跟卖者自行消失</li>
+              <li>
+                <span class="text-yellow-600">品牌保护能力</span>
+                : 较强或产品吸引力有限
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-trophy mr-2 text-blue-400"></i>
+              排名归因分析
+            </h3>
+            <div class="text-xs space-y-2 text-gray-800">
+              <p>
+                →
+                <span class="font-semibold">核心类目</span>
+                : "Desk Pads & Blotters" #1
+              </p>
+              <p>
+                →
+                <span class="font-semibold">价格影响</span>
+                : $7.99促销显著提升BSR
+              </p>
+              <p>
+                →
+                <span class="font-semibold">评分影响</span>
+                : 4.7分为关键阈值
+              </p>
+              <p>
+                →
+                <span class="text-blue-400">统治地位</span>
+                : 细分市场绝对领导者
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-calendar-alt mr-2 text-purple-400"></i>
+              子体销量与季节性
+            </h3>
+            <ol class="text-xs space-y-2 list-decimal pl-5 text-gray-800">
+              <li>
+                <span class="font-semibold">销量范围</span>
+                : 4000-8000/30天
+              </li>
+              <li>
+                <span class="font-semibold">Q4旺季</span>
+                : 11-12月达7000-8000
+              </li>
+              <li>
+                <span class="font-semibold">节后回落</span>
+                : 1月回落至4000-5000
+              </li>
+              <li>
+                <span class="text-purple-500">全年需求</span>
+                : 旺盛，非强季节性
+              </li>
+            </ol>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-life-ring mr-2 text-green-400"></i>
+              生命周期判断
+            </h3>
+            <div class="text-xs space-y-2 text-gray-800">
+              <p class="font-semibold text-center bg-green-100 py-1 rounded">成熟期 (Mature Stage)</p>
+              <p>✓ 小类目#1超过一年</p>
+              <p>✓ 销量增长趋稳</p>
+              <p>✓ 价格策略保守</p>
+              <p>✓ 评分数过万且稳定</p>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="bg-white rounded-xl p-4 shadow-md border border-gray-200">
+            <h3 class="text-xl font-medium mb-3 relative card-title-underline">
+              <i class="fas fa-lightbulb mr-2 text-yellow-400"></i>
+              全盘总结与建议
+            </h3>
+            <div class="text-xs space-y-2 text-gray-800">
+              <p>
+                <span class="font-semibold">优势</span>
+                : 类目统治力、评论基础、运营体系
+              </p>
+              <p>
+                <span class="font-semibold">风险</span>
+                : 增长天花板、竞争压力
+              </p>
+              <p>
+                <span class="text-yellow-600">建议</span>
+                : 维持领先、利润优化、口碑管理
+              </p>
+              <p>→ 考虑开发相关新品拓展产品线</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
